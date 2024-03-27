@@ -1,0 +1,213 @@
+<div class="container">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <div class="container">
+    
+      <div class="form form-stacked" style="margin-top: 30px;">
+        <div class="form-block">
+          <div class="form-controls">
+              <span>Question</span>
+              <span class="button ion-code-working" title="Inline code <code>" data-button-type="addInlineCode"></span>
+              <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+              <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              <span class="button ion-link" title="Link <a>" data-button-type="addLink"></span>
+              </div>
+          <textarea 
+            placeholder="User ID For this Question is" 
+            class="textarea-tall" 
+            id="board_content"
+            [(ngModel)]="orderquestion.question"
+          ></textarea>
+        </div>
+      </div>
+        
+        <!-- <div class="form form-stacked">
+          <div class="form-block">
+            <div class="form-controls">
+              <span>Question</span>
+                <span class="button ion-code-working" title="Inline code <code>" data-button-type="addInlineCode"></span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+            </div>
+            <textarea style="min-height: 200px;" placeholder="Ask a programmer to enter the programming question in detail which helps to get the logic clearly" class="textarea-tall" id="board_content" [(ngModel)]="mcqQuestWithoutOption.question"></textarea>
+          </div>
+        </div> -->
+    
+    
+        <div class="form form-stacked">
+          <div class="form-block">
+            <div class="form-controls">
+              <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option1}}</span></label> -->
+              <span>Option 01</span>
+              <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+              <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+            </div>
+            <textarea 
+              placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+              class="textarea-tall" 
+              id="board_content"
+              [(ngModel)]="orderquestion.option1"
+            ></textarea>
+          </div>
+        </div>
+    
+        <div class="form form-stacked">
+          <div class="form-block">
+            <div class="form-controls">
+              <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option2}}</span></label> -->
+              <span>Option 02</span>
+              <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+              <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+            </div>
+            <textarea 
+              placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+              class="textarea-tall" 
+              id="board_content"
+              [(ngModel)]="orderquestion.option2"
+            ></textarea>
+          </div>
+        </div>
+    
+        <div class="form form-stacked">
+          <div class="form-block">
+            <div class="form-controls">
+              <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+              <span>Option 03</span>
+              <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+              <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+            </div>
+            <textarea 
+              placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+              class="textarea-tall" 
+              id="board_content"
+              [(ngModel)]="orderquestion.option3"
+            ></textarea>
+          </div>
+        </div>
+    
+        <div class="form form-stacked">
+          <div class="form-block">
+            <div class="form-controls">
+              <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option4}}</span></label> -->
+              <span>Option 04</span>
+              <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+              <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+            </div>
+            <textarea 
+              placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+              class="textarea-tall" 
+              id="board_content"
+              [(ngModel)]="orderquestion.option4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 05</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option5"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 06</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option6"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 07</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option7"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 08</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option8"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 09</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option9"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form form-stacked">
+            <div class="form-block">
+              <div class="form-controls">
+                <!-- <label><span class="error-msg-span" style="color: red;text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >{{validationMessage.option3}}</span></label> -->
+                <span>Option 10</span>
+                <span class="button" title="Strong <strong>" data-button-type="addStrong"><strong>b</strong></span>
+                <span class="button" title="Emphasis <em>" data-button-type="addEmphasis"><strong><em>i</em></strong></span>
+              </div>
+              <textarea 
+                placeholder="Ask a programmer to enter the programming heading which displays for the student" 
+                class="textarea-tall" 
+                id="board_content"
+                [(ngModel)]="orderquestion.option10"
+              ></textarea>
+            </div>
+          </div>
+
+        <div class="button" >
+          <input type="submit" value="Submit MCQ Question" (click)="add()" style="width: 780px; background-color: black; color: white;margin-bottom: 20px;">
+        </div>
+
+    </div>
+      
+    

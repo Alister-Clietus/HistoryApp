@@ -1,0 +1,43 @@
+package com.history.exam.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.history.exam.dto.OrderingQuestionDTO;
+import com.history.exam.dto.ResponseDTO;
+import com.history.exam.entity.OrderingQuestionEntity;
+import com.history.exam.repository.OrderingQuestionRepository;
+
+@Service
+public class QuestionsServiceImp implements QuestionsService
+{
+	
+@Autowired
+OrderingQuestionRepository orderingQuestionRepo;
+
+public ResponseDTO getOneQuestion()
+{
+	return null;
+	
+}
+
+public ResponseDTO addQuestions(OrderingQuestionDTO questiondto)
+{
+	OrderingQuestionEntity questionentity=new OrderingQuestionEntity();
+	questionentity.setQuestionid(null);
+	questionentity.setOption1(questiondto.getOption1());
+	questionentity.setOption1(questiondto.getOption2());
+	questionentity.setOption1(questiondto.getOption3());
+	questionentity.setOption1(questiondto.getOption4());
+	questionentity.setOption1(questiondto.getOption5());
+	questionentity.setOption1(questiondto.getOption6());
+	questionentity.setOption1(questiondto.getOption7());
+	questionentity.setOption1(questiondto.getOption8());
+	questionentity.setOption1(questiondto.getOption9());
+	questionentity.setOption1(questiondto.getOption10());
+	
+	return null;
+	
+}
+
+}

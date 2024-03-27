@@ -1,0 +1,5 @@
+package com.history.exam.repository;
+
+public class OrderingQuestionRepository {
+
+}

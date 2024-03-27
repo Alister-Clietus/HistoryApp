@@ -1,0 +1,9 @@
+package com.history.exam.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.history.exam.entity.OrderingQuestionEntity;
+
+public interface OrderingQuestionRepository extends JpaRepository<OrderingQuestionEntity,String>{
+
+}

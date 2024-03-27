@@ -1,0 +1,5 @@
+package com.history.exam.dto;
+
+public class ResponseDTO {
+
+}

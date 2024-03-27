@@ -1,0 +1,26 @@
+
+<div class="box">
+    <div class="col-1">
+        <div class="question" style="background-color: black;color: white;">
+            {{data.object.Question}}
+        </div>
+
+        <div *ngFor="let option of arraydata; let i = index">
+            <div class="option-container" draggable="true" (dragstart)="onDragStart($event, i)">
+                <div class="card">{{ option }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+        <div class="question-drag" style="background-color: black;color: white;">
+            DRAG THE OPTIONS HERE
+        </div>
+      <div
+        *ngFor="let droppedItem of droppedItems"
+        class="option-container"
+      >
+        <div class="card">{{ droppedItem }}</div>
+      </div>
+    </div>
+  </div>
+

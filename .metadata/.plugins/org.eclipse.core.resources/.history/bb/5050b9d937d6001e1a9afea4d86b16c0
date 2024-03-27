@@ -1,0 +1,26 @@
+package com.history.exam.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.history.exam.dto.ResponseDTO;
+import com.history.exam.repository.OrderingQuestionRepository;
+
+@Service
+public class QuestionsServiceImp implements QuestionsService{
+@Autowired
+OrderingQuestionRepository orderingQuestionRepo;
+
+public ResponseDTO getOneQuestion()
+{
+	return null;
+	
+}
+
+public ResponseDTO addQuestions()
+{
+	return null;
+	
+}
+
+}

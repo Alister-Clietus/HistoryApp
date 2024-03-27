@@ -1,0 +1,63 @@
+.option-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    width: 700px; /* Adjust the width as needed */
+    height: 38px; /* Adjust the height as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0.5px 0.5px 2px lightblue; /* Adjust the shadow color and size as needed */
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+  }
+  
+  .col-1 {
+    flex: 1; /* Take up all available space */
+    background-color: #e0e0e0; /* Add background color if needed */
+    padding: 10px; /* Add padding as needed */
+  }
+  
+  .col-2 {
+    flex: 1; /* Take up all available space */
+    background-color: #f0f0f0; /* Add background color if needed */
+    padding: 10px; /* Add padding as needed */
+  }
+
+.question
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    width: 700px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question-drag 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    font-size: larger;
+    width: 700px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

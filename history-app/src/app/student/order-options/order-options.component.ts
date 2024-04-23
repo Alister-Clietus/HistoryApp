@@ -12,6 +12,7 @@ export class OrderOptionsComponent implements OnInit {
   data: any;
   arraydata: string[] = [];
   droppedItems: string[] = [];
+  showCongratulationAnimation: boolean = false;
 
   constructor(private httpservice:ServiceService) { }
 
@@ -73,27 +74,48 @@ export class OrderOptionsComponent implements OnInit {
     
     // Get the dropped item from the arraydata
     const droppedItem = this.arraydata[fromIndex];
-
-    // Add the dropped item to the droppedItems array
-    this.droppedItems.push(droppedItem);
-
-    // Optionally, you can remove the item from the original arraydata
-    // this.arraydata.splice(fromIndex, 1);
-    if(this.areArraysEqual())
-    {
+    console.log("Dropped Item:");
+    console.log(droppedItem);
+  
+    // Check if the dropped item already exists in droppedItems array
+    if (this.droppedItems.includes(droppedItem)) {
+      // If the item already exists, show a message and return without adding it again
       Swal.fire({
         toast: true,
         position: "center",
         showConfirmButton: false,
         timer: 1000,
-        icon: "success",
-        title: "In order",
-      });    }
-    else
-    {
-      console.log("False")
+        icon: "error",
+        title: "Item already exists in the list",
+      });
+      return;
+    }
+  
+    // Add the dropped item to the droppedItems array
+    this.droppedItems.push(droppedItem);
+    console.log("Dropped Items full:");
+    console.log(this.droppedItems);
+  
+    // Optionally, you can remove the item from the original arraydata
+    // this.arraydata.splice(fromIndex, 1);
+  
+    if (this.areArraysEqual()) {
+      this.showCongratulationAnimation = true;
+      setTimeout(() => {
+        this.showCongratulationAnimation = false;
+      }, 3000); 
+    } else {
+      Swal.fire({
+        toast: true,
+        position: "center",
+        showConfirmButton: false,
+        timer: 1000,
+        icon: "error",
+        title: "Not in order",
+      });
     }
   }
+  
 
   areArraysEqual(): boolean {
     if (this.arraydata.length !== this.droppedItems.length) {
